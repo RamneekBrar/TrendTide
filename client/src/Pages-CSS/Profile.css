@@ -1,0 +1,342 @@
+/* For devices having width greater than 1000px */
+@media screen and (min-width: 1000px) {
+    .profile--page {
+        margin-left: 30vw;
+        width: 50vw;
+        padding-top: 5vh;
+        color: #FFFFF5;
+    }
+    
+    .profile {
+        padding: 5vh 5vw;
+        background-color: #866DA3;
+        display: flex;
+        border-radius: 5px;
+    }
+    
+    .profile img {
+        width: 20vh;
+        height: 20vh;
+        background-color: #FFFFF5;
+        border-radius: 50%;
+        border: 5px solid #FFFFF5;
+    }
+    
+    .profile--data {
+        margin-left: 10vw;
+        margin-top: 1vh;
+    }
+    
+    .profile--data--user {
+        font-size: 3vh;
+    }
+    
+    .profile--data--acc {
+        display: flex;
+        margin-top: 2vh;
+    }
+    
+    .profile--data--acc div {
+        margin-right: 2vw;
+        font-weight: 500;
+    }
+    
+    .follow--button {
+        margin-top: 3vh;
+        padding: 10px;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        background-color: #FFFDA4;
+    }
+    
+    .follow--button:hover {
+        cursor: pointer;
+    }
+    
+    hr {
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    .profile--posts--grid {
+        display: grid;
+        grid-template-columns: 24.5vw 24.5vw;
+        gap: 1vw;
+        margin-bottom: 5vh;
+    }
+    
+    .profile--post {
+        height: 50vh;
+        background-color: #FFFFF5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid rgb(203, 200, 200);
+    }
+    
+    .profile--post--img {
+        max-height: 100%;
+        max-width: 80%;
+    }
+}
+
+
+
+
+/* For devices having width between 801 and 1000 */
+
+@media screen and (max-width: 1000px) and (min-width: 801px) {
+    .profile--page {
+        margin-left: 30vw;
+        width: 60vw;
+        padding-top: 5vh;
+        color: #FFFFF5;
+    }
+    
+    .profile {
+        padding: 5vh 5vw;
+        background-color: #866DA3;
+        display: flex;
+        border-radius: 5px;
+    }
+    
+    .profile img {
+        width: 20vh;
+        height: 20vh;
+        background-color: #FFFFF5;
+        border-radius: 50%;
+        border: 5px solid #FFFFF5;
+    }
+    
+    .profile--data {
+        margin-left: 10vw;
+        margin-top: 1vh;
+    }
+    
+    .profile--data--user {
+        font-size: 3vh;
+    }
+    
+    .profile--data--acc {
+        display: flex;
+        margin-top: 2vh;
+    }
+    
+    .profile--data--acc div {
+        margin-right: 2vw;
+        font-weight: 500;
+    }
+    
+    .follow--button {
+        margin-top: 3vh;
+        padding: 10px;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        background-color: #FFFDA4;
+    }
+    
+    .follow--button:hover {
+        cursor: pointer;
+    }
+    
+    hr {
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    .profile--posts--grid {
+        display: grid;
+        grid-template-columns: 29.5vw 29.5vw;
+        gap: 1vw;
+        margin-bottom: 5vh;
+    }
+    
+    .profile--post {
+        height: 50vh;
+        background-color: #FFFFF5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid rgb(203, 200, 200);
+    }
+    
+    .profile--post--img {
+        max-height: 100%;
+        max-width: 80%;
+    }
+}
+
+
+
+
+/* For devices having width between 601 and 800px */
+
+@media screen and (max-width: 800px) and (min-width: 601px) {
+    .profile--page {
+        margin-left: 15vw;
+        width: 70vw;
+        padding-top: 20vh;
+        color: #FFFFF5;
+    }
+    
+    .profile {
+        padding: 5vh 5vw;
+        background-color: #866DA3;
+        display: flex;
+        border-radius: 5px;
+    }
+    
+    .profile img {
+        width: 20vh;
+        height: 20vh;
+        background-color: #FFFFF5;
+        border-radius: 50%;
+        border: 5px solid #FFFFF5;
+    }
+    
+    .profile--data {
+        margin-left: 10vw;
+        margin-top: 1vh;
+    }
+    
+    .profile--data--user {
+        font-size: 3vh;
+    }
+    
+    .profile--data--acc {
+        display: flex;
+        margin-top: 2vh;
+    }
+    
+    .profile--data--acc div {
+        margin-right: 2vw;
+        font-weight: 500;
+    }
+    
+    .follow--button {
+        margin-top: 3vh;
+        padding: 10px;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        background-color: #FFFDA4;
+    }
+    
+    .follow--button:hover {
+        cursor: pointer;
+    }
+    
+    hr {
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    .profile--posts--grid {
+        display: grid;
+        grid-template-columns: 34.5vw 34.5vw;
+        gap: 1vw;
+        margin-bottom: 5vh;
+    }
+    
+    .profile--post {
+        height: 50vh;
+        background-color: #FFFFF5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid rgb(203, 200, 200);
+    }
+    
+    .profile--post--img {
+        max-height: 100%;
+        max-width: 80%;
+    }
+}
+
+
+
+
+/* For devices having width less than 600px */
+
+@media screen and (max-width: 600px) {
+    .profile--page {
+        margin-left: 10vw;
+        width: 80vw;
+        padding-top: 20vh;
+        padding-bottom: 15vh;
+        color: #FFFFF5;
+    }
+    
+    .profile {
+        padding: 5vh 5vw;
+        background-color: #866DA3;
+        display: flex;
+        border-radius: 5px;
+    }
+    
+    .profile img {
+        width: 20vh;
+        height: 20vh;
+        background-color: #FFFFF5;
+        border-radius: 50%;
+        border: 5px solid #FFFFF5;
+    }
+    
+    .profile--data {
+        margin-left: 10vw;
+        margin-top: 1vh;
+    }
+    
+    .profile--data--user {
+        font-size: 3vh;
+    }
+    
+    .profile--data--acc {
+        margin-top: 2vh;
+    }
+    
+    .profile--data--acc div {
+        margin-right: 2vw;
+        font-weight: 500;
+    }
+    
+    .follow--button {
+        margin-top: 3vh;
+        padding: 10px;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        background-color: #FFFDA4;
+    }
+    
+    .follow--button:hover {
+        cursor: pointer;
+    }
+    
+    hr {
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    .profile--posts--grid {
+        display: grid;
+        grid-template-columns: 80vw;
+        gap: 1vw;
+    }
+    
+    .profile--post {
+        height: 40vh;
+        background-color: #FFFFF5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid rgb(203, 200, 200);
+    }
+    
+    .profile--post--img {
+        max-height: 100%;
+        max-width: 90%;
+    }
+}

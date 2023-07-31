@@ -1,0 +1,199 @@
+/* For devices having width greater than 1000px */
+@media screen and (min-width: 1000px) {
+    .create--page {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .create--form {
+        background-color: #866DA3;
+        width: 30vw;
+        height: 40vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 5px;
+    }
+    
+    .caption--input, .create--post--button, .upload--post--pic {
+        padding: 10px;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        background-color: #FFFDA4;
+    }
+    
+    .create--post--button:hover {
+        background-color: #F5F39D;
+        cursor: pointer;
+    }
+    
+    .upload--post--pic::file-selector-button {
+        background-color: #866DA3;
+        padding: 10px;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        color: #FFFFF5;
+    }
+    
+    .upload--post--pic::file-selector-button:hover {
+        cursor: pointer;
+    }
+}
+
+
+
+
+/* For devices having width between 801 and 1000 */
+
+@media screen and (max-width: 1000px) and (min-width: 801px) {
+    .create--page {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .create--form {
+        background-color: #866DA3;
+        width: 40vw;
+        height: 40vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 5px;
+    }
+    
+    .caption--input, .create--post--button, .upload--post--pic {
+        padding: 10px;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        background-color: #FFFDA4;
+    }
+    
+    .create--post--button:hover {
+        background-color: #F5F39D;
+        cursor: pointer;
+    }
+    
+    .upload--post--pic::file-selector-button {
+        background-color: #866DA3;
+        padding: 10px;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        color: #FFFFF5;
+    }
+    
+    .upload--post--pic::file-selector-button:hover {
+        cursor: pointer;
+    }
+}
+
+
+
+
+/* For devices having width between 601 and 800px */
+
+@media screen and (max-width: 800px) and (min-width: 601px) {
+    .create--page {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .create--form {
+        background-color: #866DA3;
+        width: 60vw;
+        height: 40vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 5px;
+    }
+    
+    .caption--input, .create--post--button, .upload--post--pic {
+        padding: 10px;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        background-color: #FFFDA4;
+    }
+    
+    .create--post--button:hover {
+        background-color: #F5F39D;
+        cursor: pointer;
+    }
+    
+    .upload--post--pic::file-selector-button {
+        background-color: #866DA3;
+        padding: 10px;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        color: #FFFFF5;
+    }
+    
+    .upload--post--pic::file-selector-button:hover {
+        cursor: pointer;
+    }
+}
+
+
+
+
+/* For devices having width less than 600px */
+
+@media screen and (max-width: 600px) {
+    .create--page {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .create--form {
+        background-color: #866DA3;
+        width: 80vw;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 5px;
+    }
+    
+    .caption--input, .create--post--button, .upload--post--pic {
+        padding: 10px;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        background-color: #FFFDA4;
+    }
+    
+    .create--post--button:hover {
+        background-color: #F5F39D;
+        cursor: pointer;
+    }
+    
+    .upload--post--pic::file-selector-button {
+        background-color: #866DA3;
+        padding: 10px;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        color: #FFFFF5;
+    }
+    
+    .upload--post--pic::file-selector-button:hover {
+        cursor: pointer;
+    }
+} 

@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rouge+Script&display=swap');
+
+
+
+/* For devices having width greater than 1000px */
+@media screen and (min-width: 1000px) {
+    .home, .explore {
+        display: flex;
+        margin-left: 20vw;
+        font-family: 'Roboto', sans-serif;
+        min-height: 100vh;
+        color: #FFFFF5;
+    }
+    
+    .post {
+        background-color: #866DA3;
+        /* A587C9; */
+        width: 35vw;
+        margin: 5vh 10vw;
+        border-radius: 5px;
+        border: 1px solid rgb(203, 200, 200);
+    }
+    
+    .post:hover {
+        background-color: #866DA3;
+    }
+    
+    .post--title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .post--user {
+        border-radius: 5px 5px 0 0;
+        display: flex;
+        align-items: center;
+        height: 7vh;
+    }
+    
+    .post--user--photo {
+        border-radius: 50%;
+        background-color: white;
+        height: 5vh;
+        margin: 0vh 1vh;
+    }
+    
+    .post--user--name {
+        font-size: 2.5vh;
+        font-weight: 600;
+    }
+    
+    .post--user:hover {
+        cursor: pointer;
+    }
+    
+    .post--content {
+        height: 50vh;
+        background-color: #FFFFF5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .post--content img {
+        max-height: 100%;
+        max-width: 80%;
+        margin: auto;
+    }
+    
+    .post--reactions {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 1vh;
+    }
+    
+    .post--reaction--likes {
+        font-size: 2vh;
+        font-weight: 600;
+    }
+    
+    .post--reaction--icons {
+        font-size: 3vh;
+        display: flex;
+        cursor: pointer;
+    }
+    
+    .post--caption {
+        margin: 1vh;
+    }
+    
+    .post--comments {
+        margin: 1vh;
+        color: rgb(60, 59, 59);
+    }
+    
+    .post--comments--add {
+        margin-top: 1vh;
+    }
+    
+    .post--comments--add input {
+        padding: 5px;
+        outline: none;
+        border: none;
+        width: 80%;
+    }
+}
+
+
+
+
+/* For devices having width between 801 and 1000 */
+
+@media screen and (max-width: 1000px) and (min-width: 801px) {
+    .home, .explore {
+        display: flex;
+        margin-left: 25vw;
+        font-family: 'Roboto', sans-serif;
+        min-height: 100vh;
+        color: #FFFFF5;
+    }
+    
+    .post {
+        background-color: #866DA3;
+        width: 50vw;
+        margin: 5vh 10vw;
+        border-radius: 5px;
+        border: 1px solid rgb(203, 200, 200);
+    }
+
+    .post:hover {
+        background-color: #866DA3;
+    }
+    
+    .post--title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .post--user {
+        border-radius: 5px 5px 0 0;
+        display: flex;
+        align-items: center;
+        height: 7vh;
+    }
+    
+    .post--user--photo {
+        border-radius: 50%;
+        background-color: white;
+        height: 5vh;
+        margin: 0vh 1vh;
+    }
+    
+    .post--user--name {
+        font-size: 2.5vh;
+        font-weight: 600;
+    }
+    
+    .post--user:hover {
+        cursor: pointer;
+    }
+    
+    .post--content {
+        height: 50vh;
+        background-color: #FFFFF5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .post--content img {
+        max-height: 100%;
+        max-width: 80%;
+        margin: auto;
+    }
+    
+    .post--reactions {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 1vh;
+    }
+    
+    .post--reaction--likes {
+        font-size: 2vh;
+        font-weight: 600;
+    }
+    
+    .post--reaction--icons {
+        font-size: 3vh;
+        display: flex;
+        cursor: pointer;
+    }
+    
+    .post--caption {
+        margin: 1vh;
+    }
+    
+    .post--comments {
+        margin: 1vh;
+        color: rgb(60, 59, 59);
+    }
+    
+    .post--comments--add {
+        margin-top: 1vh;
+    }
+    
+    .post--comments--add input {
+        padding: 5px;
+        outline: none;
+        border: none;
+        width: 80%;
+    }
+}
+
+
+
+
+/* For devices having width between 601 and 800px */
+
+@media screen and (max-width: 800px) and (min-width: 601px) {
+    .home, .explore {
+        padding-top: 15vh;
+        font-family: 'Roboto', sans-serif;
+        min-height: 85vh;
+        color: #FFFFF5;
+    }
+    
+    .post {
+        background-color: #866DA3;
+        width: 60vw;
+        margin: 5vh 20vw;
+        border-radius: 5px;
+        border: 1px solid rgb(203, 200, 200);
+    }
+    
+    .post:hover {
+        background-color: #866DA3;
+    }
+    
+    .post--title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .post--user {
+        border-radius: 5px 5px 0 0;
+        display: flex;
+        align-items: center;
+        height: 7vh;
+    }
+    
+    .post--user--photo {
+        border-radius: 50%;
+        background-color: white;
+        height: 5vh;
+        margin: 0vh 1vh;
+    }
+    
+    .post--user--name {
+        font-size: 2.5vh;
+        font-weight: 600;
+    }
+    
+    .post--user:hover {
+        cursor: pointer;
+    }
+    
+    .post--content {
+        height: 50vh;
+        background-color: #FFFFF5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .post--content img {
+        max-height: 100%;
+        max-width: 80%;
+        margin: auto;
+    }
+    
+    .post--reactions {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 1vh;
+    }
+    
+    .post--reaction--likes {
+        font-size: 2vh;
+        font-weight: 600;
+    }
+    
+    .post--reaction--icons {
+        font-size: 3vh;
+        display: flex;
+        cursor: pointer;
+    }
+    
+    .post--caption {
+        margin: 1vh;
+    }
+    
+    .post--comments {
+        margin: 1vh;
+        color: rgb(60, 59, 59);
+    }
+    
+    .post--comments--add {
+        margin-top: 1vh;
+    }
+    
+    .post--comments--add input {
+        padding: 5px;
+        outline: none;
+        border: none;
+        width: 80%;
+    }
+}
+
+
+
+
+/* For devices having width less than 600px */
+
+@media screen and (max-width: 600px) {
+    .home, .explore {
+        padding-top: 15vh;
+        padding-bottom: 10vh;
+        font-family: 'Roboto', sans-serif;
+        min-height: 85vh;
+        color: #FFFFF5;
+    }
+    
+    .post {
+        background-color: #866DA3;
+        width: 80vw;
+        margin: 5vh 10vw;
+        border-radius: 5px;
+        border: 1px solid rgb(203, 200, 200);
+    }
+    
+    .post:hover {
+        background-color: #866DA3;
+    }
+    
+    .post--title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .post--user {
+        border-radius: 5px 5px 0 0;
+        display: flex;
+        align-items: center;
+        height: 7vh;
+    }
+    
+    .post--user--photo {
+        border-radius: 50%;
+        background-color: white;
+        height: 5vh;
+        margin: 0vh 1vh;
+    }
+    
+    .post--user--name {
+        font-size: 2.5vh;
+        font-weight: 600;
+    }
+    
+    .post--user:hover {
+        cursor: pointer;
+    }
+    
+    .post--content {
+        height: 50vh;
+        background-color: #FFFFF5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .post--content img {
+        max-height: 100%;
+        max-width: 80%;
+        margin: auto;
+    }
+    
+    .post--reactions {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 1vh;
+    }
+    
+    .post--reaction--likes {
+        font-size: 2vh;
+        font-weight: 600;
+    }
+    
+    .post--reaction--icons {
+        font-size: 3vh;
+        display: flex;
+        cursor: pointer;
+    }
+    
+    .post--caption {
+        margin: 1vh;
+    }
+    
+    .post--comments {
+        margin: 1vh;
+        color: rgb(60, 59, 59);
+    }
+    
+    .post--comments--add {
+        margin-top: 1vh;
+    }
+    
+    .post--comments--add input {
+        padding: 5px;
+        outline: none;
+        border: none;
+        width: 80%;
+    }
+}

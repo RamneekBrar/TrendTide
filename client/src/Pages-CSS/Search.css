@@ -1,0 +1,220 @@
+/* For devices having width greater than 1000px */
+@media screen and (min-width: 1000px) {
+    .search--page {
+        margin-left: 21vw;
+        width: 25vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 5px;
+    }
+    
+    .search {
+        background-color: #866DA3;
+        height: 90vh;
+    }
+    
+    .search--fields {
+        margin: 1vh 1vw;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .search--input {
+        padding: 10px;
+        border: none;
+        outline: none;
+        width: 15vw;
+        background-color: #FFFFF5;
+    }
+    
+    .search--clear--button {
+        background-color: #FFFDA4;
+        border: none;
+        outline: none;
+        width: 6vw;
+    }
+    
+    .search--list {
+        background-color: #FFFDA4;
+        margin: 1vh 1vw;
+        overflow-y: scroll;
+        max-height: 90%;
+    }
+    
+    .search--list--item {
+        padding: 10px;
+    }
+    
+    .search--list--item:hover {
+        background-color: #F5F39D;
+        cursor: pointer;
+    }
+}
+
+
+
+
+/* For devices having width between 801 and 1000 */
+
+@media screen and (max-width: 1000px) and (min-width: 801px) {
+    .search--page {
+        margin-left: 26vw;
+        width: 35vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 5px;
+    }
+    
+    .search {
+        background-color: #866DA3;
+        height: 90vh;
+    }
+    
+    .search--fields {
+        margin: 1vh 2vw;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .search--input {
+        padding: 10px;
+        border: none;
+        outline: none;
+        width: 21vw;
+        background-color: #FFFFF5;
+    }
+    
+    .search--clear--button {
+        background-color: #FFFDA4;
+        border: none;
+        outline: none;
+        width: 9vw;
+    }
+    
+    .search--list {
+        background-color: #FFFDA4;
+        margin: 1vh 2vw;
+        overflow-y: scroll;
+        max-height: 90%;
+    }
+    
+    .search--list--item {
+        padding: 10px;
+    }
+    
+    .search--list--item:hover {
+        background-color: #F5F39D;
+        cursor: pointer;
+    }
+}
+
+
+
+
+/* For devices having width between 601 and 800px */
+
+@media screen and (max-width: 800px) and (min-width: 601px) {
+    .search--page {
+        padding-top: 20vh;
+        margin-left: 20vw;
+        width: 60vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 5px;
+    }
+    
+    .search--fields {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1vh;
+    }
+    
+    .search--input {
+        padding: 10px;
+        border: none;
+        outline: none;
+        width: 40vw;
+        background-color: #FFFDA4;
+    }
+    
+    .search--clear--button {
+        background-color: #866DA3;
+        border: none;
+        outline: none;
+        width: 20vw;
+        color: #FFFFF5;
+    }
+    
+    .search--list {
+        background-color: #FFFDA4;
+        overflow-y: scroll;
+    }
+    
+    .search--list--item {
+        padding: 10px;
+    }
+    
+    .search--list--item:hover {
+        background-color: #F5F39D;
+        cursor: pointer;
+    }
+}
+
+
+
+
+/* For devices having width less than 600px */
+
+@media screen and (max-width: 600px) {
+    .search--page {
+        padding-top: 20vh;
+        padding-bottom: 15vh;
+        margin-left: 10vw;
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 5px;
+    }
+    
+    .search--fields {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1vh;
+    }
+    
+    .search--input {
+        padding: 10px;
+        border: none;
+        outline: none;
+        width: 55vw;
+        background-color: #FFFDA4;
+    }
+    
+    .search--clear--button {
+        background-color: #866DA3;
+        border: none;
+        outline: none;
+        width: 25vw;
+        color: #FFFFF5;
+    }
+    
+    .search--list {
+        background-color: #FFFDA4;
+        overflow-y: scroll;
+    }
+    
+    .search--list--item {
+        padding: 10px;
+    }
+    
+    .search--list--item:hover {
+        background-color: #F5F39D;
+        cursor: pointer;
+    }
+}

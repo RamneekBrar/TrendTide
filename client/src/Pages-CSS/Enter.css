@@ -1,0 +1,65 @@
+.page {
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFDA4;
+}
+
+.page--form {
+    background-color: #866DA3;
+    width: 40vw; 
+    border-radius: 10px;
+}
+
+.input--username, .input--email, .input--password, .input--con--password, .input--profile--pic {
+    width: 70%;
+    font-size: 100%;
+    padding: 1%;
+    margin: 3% 14%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: #FFFFF5;
+}
+
+.input--profile--pic {
+    width: 50%;
+    margin-left: 24%;
+}
+
+.submit--button {
+    width: 28%;
+    font-size: 100%;
+    padding: 1%;
+    border: none;
+    border-radius: 5px;
+    margin-left: 35%;
+    cursor: pointer;
+    background-color: #FFFFF5;
+}
+
+.page--form > div {
+    margin-top: 3%;
+    padding: 10px;
+    color: #FFFDA4;
+}
+
+@media screen and (max-width: 1000px) {
+    .page--form {
+        width: 50vw;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .page--form {
+        width: 60vw;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .page--form {
+        width: 90vw;
+    }
+}

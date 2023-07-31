@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rouge+Script&display=swap');
+
+
+/* For devices having width greater than 1000px */
+@media screen and (min-width: 1000px) {
+    .navbar {
+        position: fixed;
+        width: 20vw;
+        height: 100vh;
+        background-color: #FFFDA4;
+        border-right: 1px solid rgb(203, 200, 200); 
+    }
+    
+    .navbar--title {
+        padding: 3vh;
+        font-family: 'Rouge Script', cursive;
+        font-size: 5vh;
+        font-weight: 700;
+    }
+    
+    .navbar--links--cont {
+        margin: 2vh 2vw;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 100;
+        font-size: 3vh;
+        display: flex;
+        align-items: center;
+        border-radius: 5px;
+        height: 7vh;
+        padding: 0 1vh;
+    }
+    
+    .navbar--links--cont:hover {
+        background-color: #F5F39D;
+    }
+    
+    .navbar--links--cont p {
+        margin-left: 1vh;
+    }
+    
+    .navbar--links--cont img {
+        width: 3vh;
+        background-color: white;
+        border-radius: 50%;
+    }
+    
+    .navbar--links--logout {
+        margin: 8vh 2vw;
+        height: 5vh;
+        width: 8vw;
+        font-size: 2vh;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        background-color: #866DA3;
+        color: white;
+    }
+    
+    .navbar--links--logout:hover {
+        background-color: #715C8A;
+    } 
+}
+
+
+
+
+/* For devices having width between 801 and 1000 */
+
+@media screen and (max-width: 1000px) and (min-width: 801px){
+    .navbar {
+        position: fixed;
+        width: 25vw;
+        height: 100vh;
+        background-color: #FFFDA4;
+        border-right: 1px solid rgb(203, 200, 200); 
+    }
+    
+    .navbar--title {
+        padding: 3vh;
+        font-family: 'Rouge Script', cursive;
+        font-size: 5vh;
+        font-weight: 700;
+    }
+    
+    .navbar--links--cont {
+        margin: 2vh 2vw;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 100;
+        font-size: 3vh;
+        display: flex;
+        align-items: center;
+        border-radius: 5px;
+        height: 7vh;
+        padding: 0 1vh;
+    }
+    
+    .navbar--links--cont:hover {
+        background-color: #F5F39D;
+    }
+    
+    .navbar--links--cont p {
+        margin-left: 1vh;
+    }
+    
+    .navbar--links--cont img {
+        width: 3vh;
+        background-color: white;
+        border-radius: 50%;
+    }
+    
+    .navbar--links--logout {
+        margin: 8vh 2vw;
+        height: 5vh;
+        width: 8vw;
+        font-size: 2vh;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        background-color: #866DA3;
+        color: white;
+    }
+    
+    .navbar--links--logout:hover {
+        background-color: #715C8A;
+    } 
+}
+
+
+
+/* For devices having width between 601 and 800px */
+
+@media screen and (max-width: 800px) and (min-width: 601px){
+    .navbar {
+        position: fixed;
+        width: 100vw;
+        height: 15vh;
+        background-color: #FFFDA4;
+        border-bottom: 1px solid rgb(203, 200, 200); 
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .navbar--title {
+        margin-left: 2vw;
+        font-family: 'Rouge Script', cursive;
+        font-size: 10vh;
+        font-weight: 700;
+    }
+
+    .navbar--links {
+        display: flex;
+        align-items: center;
+    }
+    
+    .navbar--links--cont {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 100;
+        font-size: 5vh;
+        margin: 0 1vw;
+    }
+
+    .navbar--links--cont:hover {
+        background-color: #F5F39D;
+    }
+    
+    .navbar--links--cont p {
+        display: none;
+    }
+    
+    .navbar--links--cont img {
+        width: 5vh;
+        height: 5vh;
+        background-color: white;
+        border-radius: 50%;
+    }
+    
+    .navbar--links--logout {
+        margin: 0vh 2vw;
+        height: 5vh;
+        font-size: 3vh;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        background-color: #866DA3;
+        color: white;
+    }
+    
+    .navbar--links--logout:hover {
+        background-color: #715C8A;
+    }
+}
+
+
+
+
+/* For devices having width less than 600px */
+
+@media screen and (max-width: 600px){
+    .navbar--title {
+        position: fixed;
+        top: 0;
+        width: 100vw;
+        height: 15vh;
+        background-color: #FFFDA4;
+        border-bottom: 1px solid rgb(203, 200, 200); 
+        padding-left: 10vw;
+        font-family: 'Rouge Script', cursive;
+        font-size: 10vh;
+        font-weight: 700;
+    }
+
+    .navbar--links {
+        position: fixed;
+        bottom: 0;
+        width: 100vw;
+        height: 10vh;
+        background-color: #FFFDA4;
+        border-top: 1px solid rgb(203, 200, 200); 
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    .navbar--links--cont {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 100;
+        font-size: 5vh;
+        margin: 0 1vw;
+    }
+
+    .navbar--links--cont:hover {
+        background-color: #F5F39D;
+    }
+    
+    .navbar--links--cont p {
+        display: none;
+    }
+    
+    .navbar--links--cont img {
+        width: 5vh;
+        height: 5vh;
+        background-color: white;
+        border-radius: 50%;
+    }
+    
+    .navbar--links--logout {
+        margin: 0vh 2vw;
+        height: 5vh;
+        font-size: 3vh;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        background-color: #866DA3;
+        color: white;
+    }
+    
+    .navbar--links--logout:hover {
+        background-color: #715C8A;
+    }
+}
