@@ -2,6 +2,7 @@ import React from "react"
 import { UserContext } from "../LandingPage";
 import Post from "../Components/Post";
 import "../Pages-CSS/Home.css"
+import API_BASE_URL from "../api";
 
 export default function Home() {
     const {state, dispatch} = React.useContext(UserContext);
@@ -9,7 +10,7 @@ export default function Home() {
     const [comment, setComment] = React.useState("");
 
     React.useEffect(() => {
-        fetch("/allpost", {
+        fetch(`${API_BASE_URL}/allpost`, {
             headers: {
                 "Authorization": "Bearer " + localStorage.getItem("jwt")
             }
@@ -22,7 +23,7 @@ export default function Home() {
 
 
     function likePost(id) {
-        fetch("/like", {
+        fetch(`${API_BASE_URL}/like`, {
             method: "put",
             headers: {
                 "Content-Type": "application/json",
@@ -52,7 +53,7 @@ export default function Home() {
 
 
     function unlikePost(id) {
-        fetch("/unlike", {
+        fetch(`${API_BASE_URL}/unlike`, {
             method: "put",
             headers: {
                 "Content-Type": "application/json",
@@ -96,7 +97,7 @@ export default function Home() {
 
 
     function makeComment(text, postId) {
-        fetch("/comment", {
+        fetch(`${API_BASE_URL}/comment`, {
             method: "put",
             headers: {
                 "Content-Type": "application/json",
@@ -127,7 +128,7 @@ export default function Home() {
 
 
     function deletePost(postId) {
-        fetch(`/deletepost/${postId}`, {
+        fetch(`${API_BASE_URL}/deletepost/${postId}`, {
             method: "delete",
             headers: {
                 "Authorization": "Bearer " + localStorage.getItem("jwt")

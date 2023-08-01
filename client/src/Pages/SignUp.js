@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import "../Pages-CSS/Enter.css"
+import API_BASE_URL from "../api";
 
 export default function SignUp() {
     const navigate = useNavigate();
@@ -73,7 +74,7 @@ export default function SignUp() {
             return;
         }
 
-        fetch("/signup", {
+        fetch(`${API_BASE_URL}/signup`, {
             method: "post",
             headers: {
                 "Content-Type": "application/json"

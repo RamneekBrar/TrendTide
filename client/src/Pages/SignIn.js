@@ -2,6 +2,7 @@ import React from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import { UserContext } from "../LandingPage";
 import "../Pages-CSS/Enter.css"
+import API_BASE_URL from "../api";
 
 export default function SignIn() {
     const {state, dispatch} = React.useContext(UserContext)
@@ -30,7 +31,7 @@ export default function SignIn() {
     function postUser(e) {
         e.preventDefault();
 
-        fetch("/signin", {
+        fetch(`${API_BASE_URL}/signin`, {
             method: "post",
             headers: {
                 "Content-Type": "application/json"

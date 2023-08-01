@@ -1,6 +1,7 @@
 import React from "react"
 import { useNavigate } from "react-router-dom";
 import "../Pages-CSS/Create.css"
+import API_BASE_URL from "../api";
 
 
 export default function Create() {
@@ -69,7 +70,7 @@ export default function Create() {
     React.useEffect(() => {
         if(create.imageUrl)
         {
-            fetch("/createpost", {
+            fetch(`${API_BASE_URL}/createpost`, {
                 method: "post",
                 headers: {
                     "Content-Type": "application/json",

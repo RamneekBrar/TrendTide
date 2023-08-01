@@ -1,6 +1,7 @@
 import React from "react"
 import "../Pages-CSS/Search.css"
 import { useNavigate } from "react-router-dom";
+import API_BASE_URL from "../api";
 
 export default function Search() {
     const [query, setQuery] = React.useState();
@@ -29,7 +30,7 @@ export default function Search() {
 
 
     React.useEffect(() => {
-        fetch("/search_users", {
+        fetch(`${API_BASE_URL}/search_users`, {
             method: "post",
             headers: {
                 "Content-Type": "application/json"

@@ -2,13 +2,14 @@ import React from "react"
 import { UserContext } from "../LandingPage";
 import Post from "../Components/Post";
 import "../Pages-CSS/Home.css"
+import API_BASE_URL from "../api";
 
 export default function Explore() {
     const {state, dispatch} = React.useContext(UserContext);
     const [posts, setPosts] = React.useState([]);
 
     React.useEffect(() => {
-        fetch("/followingpost", {
+        fetch(`${API_BASE_URL}/followingpost`, {
             headers: {
                 "Authorization": "Bearer " + localStorage.getItem("jwt")
             }
@@ -21,7 +22,7 @@ export default function Explore() {
 
 
     function likePost(id) {
-        fetch("/like", {
+        fetch(`${API_BASE_URL}/like`, {
             method: "put",
             headers: {
                 "Content-Type": "application/json",
@@ -51,7 +52,7 @@ export default function Explore() {
 
 
     function unlikePost(id) {
-        fetch("/unlike", {
+        fetch(`${API_BASE_URL}/unlike`, {
             method: "put",
             headers: {
                 "Content-Type": "application/json",
@@ -88,7 +89,7 @@ export default function Explore() {
 
 
     function makeComment(text, postId) {
-        fetch("/comment", {
+        fetch(`${API_BASE_URL}/comment`, {
             method: "put",
             headers: {
                 "Content-Type": "application/json",
@@ -119,7 +120,7 @@ export default function Explore() {
 
 
     function deletePost(postId) {
-        fetch(`/deletepost/${postId}`, {
+        fetch(`${API_BASE_URL}/deletepost/${postId}`, {
             method: "delete",
             headers: {
                 "Authorization": "Bearer " + localStorage.getItem("jwt")

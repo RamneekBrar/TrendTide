@@ -1,13 +1,14 @@
 import React from "react"
 import { UserContext } from "../LandingPage";
 import "../Pages-CSS/Profile.css"
+import API_BASE_URL from "../api";
 
 export default function Profile() {
     const [myPosts, setMyPosts] = React.useState([])
     const {state, dispatch} = React.useContext(UserContext);
 
     React.useEffect(() => {
-        fetch("/mypost", {
+        fetch(`${API_BASE_URL}/mypost`, {
             headers: {
                 "Authorization": "Bearer " + localStorage.getItem("jwt")
             }

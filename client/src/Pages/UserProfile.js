@@ -2,6 +2,7 @@ import React, { useContext } from "react"
 import { useParams } from "react-router-dom";
 import { UserContext } from "../LandingPage";
 import "../Pages-CSS/Profile.css"
+import API_BASE_URL from "../api";
 
 
 export default function UserProfile() {
@@ -10,7 +11,7 @@ export default function UserProfile() {
     const {userId} = useParams()
 
     React.useEffect(() => {
-        fetch(`/user/${userId}`, {
+        fetch(`${API_BASE_URL}/user/${userId}`, {
             headers: {
                 "Authorization": "Bearer " + localStorage.getItem("jwt")
             }
@@ -23,7 +24,7 @@ export default function UserProfile() {
 
 
     function followUser() {
-        fetch("/follow", {
+        fetch(`${API_BASE_URL}/follow`, {
             method: "put",
             headers: {
                 "Content-Type": "application/json",
@@ -62,7 +63,7 @@ export default function UserProfile() {
 
 
     function unfollowUser() {
-        fetch("/unfollow", {
+        fetch(`${API_BASE_URL}/unfollow`, {
             method: "put",
             headers: {
                 "Content-Type": "application/json",
