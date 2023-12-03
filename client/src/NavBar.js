@@ -18,7 +18,7 @@ export default function Navbar() {
 
     return (
         <div className="navbar">
-            <div className="navbar--title">Vibra</div>
+            <div className="navbar--title">TrendTide</div>
             <div className="navbar--links">
                 <NavLink style={{textDecoration: 'none', color: "black"}} to="">
                     <div className="navbar--links--cont">
